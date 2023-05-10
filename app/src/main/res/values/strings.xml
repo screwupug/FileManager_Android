@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FileManager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert_dialog_message">Для получения доступа вам необходимо предоставить полный доступ ко всем файлам</string>
+    <string name="alert_dialog_no_compatible_app">Похоже на вашем устройстве нет подходящего приложения</string>
+    <string name="sort_by_size">Сортировка по размеру</string>
+    <string name="sort_by_name">Сортировка по имени</string>
+    <string name="sort_by_date">Сортировка по дате</string>
+    <string name="sort_by_extension">Сортировка по расширению</string>
+    <string name="ascending_sort">Сортировка по возрастанию</string>
+    <string name="descending_sort">Сортировка по убыванию</string>
+</resources>
