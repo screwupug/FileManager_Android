@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -21,7 +22,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/icon"
-        android:textColor="@android:color/black"
+        android:textColor="?android:textColorPrimary"
         android:textSize="14sp"
         tools:text="name">
 
@@ -57,7 +58,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/date"
-
         android:background="@color/cardview_shadow_start_color"
         android:orientation="horizontal">
     </LinearLayout>

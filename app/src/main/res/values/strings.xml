@@ -10,4 +10,6 @@
     <string name="sort_by_extension">Сортировка по расширению</string>
     <string name="ascending_sort">Сортировка по возрастанию</string>
     <string name="descending_sort">Сортировка по убыванию</string>
+    <string name="request_permissions_button">Предоставить разрешение</string>
+    <string name="request_permissions_message">Чтобы продолжить работу, предоставьте разрешения</string>
 </resources>

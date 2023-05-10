@@ -15,16 +15,19 @@
             android:id="@+id/no_permission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:textSize="15sp"
+            android:text="@string/request_permissions_message"
             android:layout_centerInParent="true"
             android:visibility="invisible"/>
         <Button
             android:id="@+id/request_permission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:layout_below="@+id/no_permission"
+            android:textColor="?android:textColorPrimary"
             android:layout_centerInParent="true"
-            android:text="Предоставить разрешение"
+            android:text="@string/request_permissions_button"
             android:visibility="invisible">
         </Button>
     </RelativeLayout>
