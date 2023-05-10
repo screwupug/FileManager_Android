@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.format.Formatter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,11 +51,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         File selectedFile = filesList.get(position);
         Date date = new Date(selectedFile.lastModified());
         String extension = FilenameUtils.getExtension(selectedFile.toString());
+        holder.date.setText(FORMATTER.format(date));
+        holder.name.setText(selectedFile.getName());
 
         if (selectedFile.isDirectory()) {
             holder.icon.setImageResource(R.drawable.baseline_folder_24);
             holder.size.setText("<dir>");
         } else {
+            holder.size.setText(Formatter.formatFileSize(CONTEXT, selectedFile.length()));
             switch (extension) {
                 case "jpeg":
                 case "png":
@@ -84,9 +88,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                     break;
             }
         }
-
-        holder.date.setText(FORMATTER.format(date));
-        holder.name.setText(selectedFile.getName());
 
         holder.itemView.setOnClickListener(view -> {
             if (selectedFile.isDirectory()) {
